@@ -49,12 +49,12 @@ class WebToPDFConverter:
         
         with sync_playwright() as playwright:
             browser = self._launch_browser(playwright)
-            page = browser.new_page()  # <-- Đây là biến page được khai báo
+            page = browser.new_page()  # <-- Khai báo biến page ở đây
             
             try:
                 self._configure_page(page, url)
                 self._navigate_to_page(page, url)
-                self._apply_delay(page)  # <-- Truyền page vào đây
+                self._apply_delay(page)  # <-- Truyền page vào phương thức
                 self._generate_pdf(page, output_path)
                 
             finally:
