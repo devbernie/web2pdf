@@ -33,31 +33,24 @@ pip install web2pdf
 
 ### From Source
 
-1\. Clone the repository:
+1. Clone the repository:
 
-    ```bash
+    ```bash
+    git clone https://github.com/devbernie/web2pdf.git
+    cd web2pdf
+    ```
 
-    git clone https://github.com/devbernie/web2pdf.git
+2. Install dependencies:
 
-    cd web2pdf
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-    ```
+3. Install Playwright browsers:
 
-2\. Install dependencies:
-
-    ```bash
-
-    pip install -r requirements.txt
-
-    ```
-
-3\. Install Playwright browsers:
-
-    ```bash
-
-    playwright install chromium
-
-    ```
+    ```bash
+    playwright install chromium
+    ```
 
 ---
 
@@ -144,5 +137,3 @@ If you encounter any issues or have questions, please [open an issue](https://gi
 ---
 
 Made with ❤️ by [devbernie](https://github.com/devbernie)
-
-```
