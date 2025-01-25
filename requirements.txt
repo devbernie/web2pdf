@@ -1,0 +1,4 @@
+click
+playwright
+pytest
+python-dotenv

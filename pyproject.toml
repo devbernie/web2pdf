@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web2pdf"
+version = "0.1.0"
+description = "CLI tool to convert websites to PDF with advanced options"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "DevBernie", email = "dev.bernie@gmail.com"}
+]
+keywords = ["pdf", "cli", "converter", "web"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities"
+]
+dependencies = [
+    "click>=8.1.8",
+    "playwright>=1.49.1",
+    "python-dotenv>=1.0.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/devbernie/web2pdf"
+Documentation = "https://github.com/devbernie/web2pdf#readme"
+Repository = "https://github.com/devbernie/web2pdf"
+Issues = "https://github.com/devbernie/web2pdf/issues"
+
+[project.scripts]
+web2pdf = "web2pdf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["web2pdf*"]
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=web2pdf --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+disallow_untyped_defs = true
+warn_return_any = true
+warn_unused_configs = true
