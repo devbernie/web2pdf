@@ -24,97 +24,125 @@
 ## Installation
 
 ### From PyPI (Recommended)
+
 ```bash
+
 pip install web2pdf
+
+```
 
 ### From Source
 
-1.  Clone the repository:
+1\. Clone the repository:
 
-    ```bash
-    git clone https://github.com/devbernie/web2pdf.git
-    cd web2pdf
+    ```bash
 
-2.  Install dependencies:
+    git clone https://github.com/devbernie/web2pdf.git
 
-    ```bash
-    pip install -r requirements.txt
+    cd web2pdf
 
-3.  Install Playwright browsers:
+    ```
 
-    ```bash
-    playwright install chromium
+2\. Install dependencies:
 
-* * * * *
+    ```bash
 
-Usage
------
+    pip install -r requirements.txt
+
+    ```
+
+3\. Install Playwright browsers:
+
+    ```bash
+
+    playwright install chromium
+
+    ```
+
+---
+
+## Usage
 
 ### Basic Conversion
 
 ```bash
+
 web2pdf https://example.com output.pdf
+
+```
 
 ### Advanced Options
 
 ```bash
-web2pdf https://example.com report.pdf\
-  --page-size A4\
-  --orientation landscape\
-  --margin 1 1 1 1\
-  --header "My Custom Header"\
-  --footer "Page {page} of {total}"\
-  --delay 5000\
-  --auth-user myuser\
-  --auth-pass mypass
+
+web2pdf https://example.com report.pdf
+
+  --page-size A4
+
+  --orientation landscape
+
+  --margin 1 1 1 1
+
+  --header "My Custom Header"
+
+  --footer "Page {page} of {total}"
+
+  --delay 5000
+
+  --auth-user myuser
+
+  --auth-pass mypass
+
+```
 
 ### Help Command
 
 ```bash
+
 web2pdf --help
 
-* * * * *
+```
 
-Configuration
--------------
+---
+
+## Configuration
 
 ### Environment Variables
 
--   `WEB2PDF_PROXY`: Set default proxy server
+- `WEB2PDF_PROXY`: Set default proxy server.
 
--   `WEB2PDF_TIMEOUT`: Set default timeout (in milliseconds)
+- `WEB2PDF_TIMEOUT`: Set default timeout (in milliseconds).
 
-* * * * *
+---
 
-Contributing
-------------
+## Contributing
 
 We welcome contributions! Please follow these steps:
 
-1.  Fork the repository
+1\. Fork the repository.
 
-2.  Create a new branch (`git checkout -b feature/YourFeature`)
+2\. Create a new branch (`git checkout -b feature/YourFeature`).
 
-3.  Commit your changes (`git commit -m 'Add some feature'`)
+3\. Commit your changes (`git commit -m 'Add some feature'`).
 
-4.  Push to the branch (`git push origin feature/YourFeature`)
+4\. Push to the branch (`git push origin feature/YourFeature`).
 
-5.  Open a Pull Request
+5\. Open a Pull Request.
 
-* * * * *
+---
 
-License
--------
+## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://chat.deepseek.com/a/chat/s/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/devbernie/web2pdf/blob/main/LICENSE) file for details.
 
-* * * * *
+---
 
-Support
--------
+## Support
 
-If you encounter any issues or have questions, please [open an issue](https://github.com/devbernie/web2pdf/issues).
+If you encounter any issues or have questions, please [open an issue](https://github.com/devbernie/web2pdf/issues).
 
-* * * * *
+---
 
-Made with ❤️ by [devbernie](https://github.com/devbernie)
+Made with ❤️ by [devbernie](https://github.com/devbernie)
+
+```
