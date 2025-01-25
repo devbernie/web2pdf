@@ -38,13 +38,19 @@ pip install web2pdf
     cd web2pdf
     ```
 
-2. Install dependencies:
+2. Install packages:
+
+    ```bash
+    pip install .
+    ```
+
+3. Install dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Install Playwright browsers:
+4. Install Playwright browsers:
 
     ```bash
     playwright install chromium
