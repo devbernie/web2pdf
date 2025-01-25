@@ -2,8 +2,6 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI Version](https://img.shields.io/pypi/v/web2pdf)](https://pypi.org/project/web2pdf/)
-[![Build Status](https://github.com/devbernie/web2pdf/actions/workflows/build.yml/badge.svg)](https://github.com/devbernie/web2pdf/actions)
 
 **Web2PDF** is a powerful command-line tool for converting websites to PDF files with advanced customization options. Built with Python and Playwright, it supports modern web technologies, including JavaScript-heavy websites.
 
