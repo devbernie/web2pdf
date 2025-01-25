@@ -43,7 +43,6 @@ where = ["."]
 include = ["web2pdf*"]
 
 [tool.pytest.ini_options]
-addopts = "-v --cov=web2pdf --cov-report=term-missing"
 testpaths = ["tests"]
 
 [tool.mypy]

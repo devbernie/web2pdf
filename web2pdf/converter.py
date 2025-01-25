@@ -49,12 +49,12 @@ class WebToPDFConverter:
         
         with sync_playwright() as playwright:
             browser = self._launch_browser(playwright)
-            page = browser.new_page()
+            page = browser.new_page()  # <-- Đây là biến page được khai báo
             
             try:
                 self._configure_page(page, url)
                 self._navigate_to_page(page, url)
-                self._apply_delay()
+                self._apply_delay(page)  # <-- Truyền page vào đây
                 self._generate_pdf(page, output_path)
                 
             finally:
@@ -99,7 +99,7 @@ class WebToPDFConverter:
             if not nav_result.ok:
                 raise
 
-    def _apply_delay(self):
+    def _apply_delay(self, page):  # <-- Thêm page làm tham số
         """Handle delay before PDF generation"""
         if self.delay > 0:
             self.logger.debug(f"Applying delay: {self.delay}ms")
